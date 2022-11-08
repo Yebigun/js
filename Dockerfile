@@ -17,6 +17,8 @@ RUN --mount=type=ssh git clone git@github.com:Yebigun/js.git /server
 # change working directory
 WORKDIR /server
 
+RUN npm init --yes
+
 # intall node package manager
 RUN npm install
 
